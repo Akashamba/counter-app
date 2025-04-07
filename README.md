@@ -5,6 +5,11 @@
 [ ] Create basic counter functionality:
 
 - [x] UI Layout
-- [ ] Increment and decrement counter, with basic unstyled buttons
-- [ ] Set Target, and stop increment when count equals target
-- [ ] Reset count button
+- [x] Increment and decrement counter, with basic unstyled buttons
+- [x] Set Target (through a modal), and stop increment when count equals target
+- [x] Reset count button
+
+[ ] Add Sounds
+
+[ ] Add a modal to confirm reset
+[ ] Make Target Display editable (remove target modal)
