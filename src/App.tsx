@@ -10,18 +10,18 @@ function App() {
   const [target, setTarget] = useState<number>(0);
   const [disableIncrement, setDisableIncrement] = useState<boolean>(false);
   const [disableDecrement, setDisableDecrement] = useState<boolean>(true);
+  const incrementAudio = new Audio("/audiomass-type.mp3");
+  const decrementAudio = new Audio("/audiomass-backspace.mp3");
 
   const handleIncrementCount = () => {
-    const audio = new Audio("/audiomass-type.mp3"); // If it's in public/
-    audio.play();
+    incrementAudio.play();
     setCurrentCount((currentCount) => {
       return currentCount + 1;
     });
   };
 
   const handleDecrementCount = () => {
-    const audio = new Audio("/audiomass-backspace.mp3"); // If it's in public/
-    audio.play();
+    decrementAudio.play();
     setCurrentCount((currentCount) => currentCount - 1);
   };
 
