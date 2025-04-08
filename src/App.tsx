@@ -12,14 +12,16 @@ function App() {
   const [disableDecrement, setDisableDecrement] = useState<boolean>(true);
 
   const handleIncrementCount = () => {
+    const audio = new Audio("src/assets/audiomass-type.mp3"); // If it's in public/
+    audio.play();
     setCurrentCount((currentCount) => {
-      // if (currentCount >= target)
-      //   return ;
       return currentCount + 1;
     });
   };
 
   const handleDecrementCount = () => {
+    const audio = new Audio("src/assets/audiomass-backspace.mp3"); // If it's in public/
+    audio.play();
     setCurrentCount((currentCount) => currentCount - 1);
   };
 
